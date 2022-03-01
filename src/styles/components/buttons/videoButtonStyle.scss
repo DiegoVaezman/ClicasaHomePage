@@ -1,0 +1,28 @@
+.__videoButton {
+    border: none;
+    width: 170px;
+    height: 50px;
+    border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+    // &:hover {
+    //     background-color: $cerulean;
+    // }
+    // &:hover > span{
+    //     color: $white;
+    //     }
+    &:active {
+        opacity: 0.8;
+    }
+
+   &_text {
+    margin-left: 15px;
+    color: $cerulean;
+    font-size: 14px;
+   }
+
+}

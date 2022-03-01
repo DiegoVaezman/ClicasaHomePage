@@ -1,0 +1,17 @@
+.__principalButton {
+    border: none;
+    background-color: $cerulean;
+    width: 215px;
+    height: 50px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        width: 212px;
+        height: 47px;
+    }
+    &:active {
+        opacity: 0.8;
+    }
+}

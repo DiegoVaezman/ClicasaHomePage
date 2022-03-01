@@ -1,0 +1,111 @@
+.__sellScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.__sellScreen_topContainer {
+    background-image: url('../../../assets/ferran-fusalba-99194.png');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 640px;
+
+    &_title {
+        color: white;
+        font-size: 70px;
+        width: 450px;
+        display: inline-block;
+        text-align: center;
+        margin-top: 70px;
+
+    }
+    &_subtitle {
+        font-size: 18px;
+        color: $white;
+        text-align: center;
+        line-height: 1.44;
+        margin-top: 27px;
+        margin-bottom: 27px;
+    }
+}
+
+.__sellScreen_input_container {
+    height: 80px;
+    width: 630px;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 15px;
+
+    &_icon {
+        margin-right: 12px;
+    }
+    & input {
+        border: none;
+        font-size: 18px;
+        flex: 1;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.__sellScreen_secondContainer {
+    width: 70%;
+    height: 520px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -60px;
+    min-width: 680px;
+
+    &_title {
+        font-size: 42px;
+        color: $cerulean;
+        margin-top: 56px;
+    }
+
+    &_subtitle {
+        font-size: 18px;
+        color: $greyish-brown;
+        width: 500px;
+        text-align: center;
+        margin-top: 13px;
+    }
+
+    &_itemsContainer {
+        display: flex;
+        margin-top: 60px;
+
+        & img {
+            width: 80px;
+        }
+        &_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 5px 0 5px;
+            min-width: 160px;
+        }
+        & span:nth-child(2) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: $cerulean;
+        }
+        & span:nth-child(3) {
+            font-size: 16px;
+            color: $warm-grey;
+            text-align: center;
+        }
+    }
+}
+
+
