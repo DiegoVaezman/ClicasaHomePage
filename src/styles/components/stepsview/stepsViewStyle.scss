@@ -1,0 +1,15 @@
+.__stepsView {
+    display: flex;
+    flex-direction: column;
+    
+
+    &_header {
+        display: flex;
+        flex-direction: row;
+    } 
+
+    &_image {
+        object-fit: contain;
+        width: 100%;
+    }
+}

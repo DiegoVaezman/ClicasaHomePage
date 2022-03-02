@@ -7,7 +7,7 @@ export const Header = () => {
     <div className="__header">
       <img
         src={require("../../assets/logo-principal.png")}
-        className="card-img"
+        className="__header_logo"
         alt="clicasa_logo"
       />
       <Navbar />

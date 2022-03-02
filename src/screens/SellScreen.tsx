@@ -1,6 +1,7 @@
 import React from "react";
 import { PrincipalButton } from "../components/buttons/PrincipalButton";
 import { VideoButton } from "../components/buttons/VideoButton";
+import { StepsView } from "../components/stepsview/StepsView";
 
 export const SellScreen = () => {
   return (
@@ -72,6 +73,41 @@ export const SellScreen = () => {
               hogar
             </span>
           </div>
+        </div>
+      </div>
+
+      <div className="__sellScreen_thirdContainer">
+        <span className="__sellScreen_thirdContainer_title lato-light">
+          Vender tu piso nunca fue tan fácil
+        </span>
+        <span className="__sellScreen_thirdContainer_subtitle lato-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </span>
+      </div>
+      <div className="__sellScreen_stepsViewContainer">
+        <StepsView />
+      </div>
+
+      <div className="__sellScreen_fourContainer"></div>
+
+      <div className="__sellScreen_fifthContainer">
+        <span className="__sellScreen_fifthContainer_title lato-light">
+          Trabajamos con las mejores empresas
+        </span>
+        <span className="__sellScreen_fifthContainer_subtitle lato-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </span>
+        <div className="__sellScreen_fifthContainer_imageContainer">
+          <img
+            className="__sellScreen_fifthContainer_image"
+            src={require("../assets/inmoseguros-image.png")}
+          />
+          <img
+            className="__sellScreen_fifthContainer_image"
+            src={require("../assets/mapfre-image.png")}
+          />
         </div>
       </div>
     </div>

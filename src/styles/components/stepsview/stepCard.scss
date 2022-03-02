@@ -1,0 +1,29 @@
+.__stepCard {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    padding-left: 17px;
+    padding-right: 5px;
+    padding-top: 18px;
+    height: 130px;
+    cursor: pointer;
+
+
+    &_icon {
+        width: 42px;
+        height: 42px;
+        margin-right: 13px;
+    }
+
+    &_title {
+        font-size: 18px;
+        color: $greyish-brown;
+        margin-bottom: 6px;
+    }
+    &_subtitle {
+        font-size: 13px;
+        color: $warm-grey;
+
+    }
+
+}
