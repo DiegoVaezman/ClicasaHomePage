@@ -1,0 +1,51 @@
+.__footerMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_logo {
+        margin-top: 30px;
+        width: 45%;
+        object-fit: contain;
+    }
+
+    &_links {
+        margin-top: 20px;
+
+        &_link {
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 13px;
+            color: $greyish-brown;
+        }
+    }
+
+    &_contact {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        border-top: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+
+    }
+
+    &_derechos {
+        display: flex;
+        justify-content: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $light-gray;
+
+        &_text {
+            font-size: 13px;
+            color: $greyish-brown;
+        }
+    }
+
+    &_social {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        &_icon {
+            margin-right: 10px;
+        }
+    }
+}

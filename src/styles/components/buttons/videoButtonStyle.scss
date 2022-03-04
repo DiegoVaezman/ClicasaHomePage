@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 
     // &:hover {
     //     background-color: $cerulean;

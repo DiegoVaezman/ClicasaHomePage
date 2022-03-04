@@ -55,7 +55,34 @@ export const Navbar = () => {
       >
         #YOELIJOCLICPISO
       </NavLink>
-      <NavLink
+      <div className="__navbar_dropdown">
+        <div className="lato-regular __navbar_link __navbar_dropdown_title">
+          <span>¿POR QUÉ CLICKPISO?</span>
+          <img
+            src={require("../../../assets/down.png")}
+            alt="down-icon"
+            style={{ alignSelf: "center" }}
+          />
+        </div>
+        <div className="__navbar_dropdown_content">
+          <NavLink to="#" className="__navbar_dropdown_item">
+            <span className="__navbar_dropdown_item_text lato-regular">
+              Rapidez
+            </span>
+          </NavLink>
+          <NavLink to="#" className="__navbar_dropdown_item">
+            <span className="__navbar_dropdown_item_text lato-regular">
+              Sencillez
+            </span>
+          </NavLink>
+          <NavLink to="#" className="__navbar_dropdown_item">
+            <span className="__navbar_dropdown_item_text lato-regular">
+              Confianza
+            </span>
+          </NavLink>
+        </div>
+      </div>
+      {/* <NavLink
         to="/home/link"
         className={({ isActive }) =>
           "lato-regular __navbar_link " +
@@ -63,7 +90,7 @@ export const Navbar = () => {
         }
       >
         ¿POR QUÉ CLICPISO?
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };

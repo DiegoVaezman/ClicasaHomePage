@@ -1,19 +1,101 @@
 import React from "react";
 import { PrincipalButton } from "../components/buttons/PrincipalButton";
 import { VideoButton } from "../components/buttons/VideoButton";
+import { SecondContainerItemsDesktop } from "../components/sellscreen/SecondContainerItemsDesktop";
+import { SecondContainerItemsMobile } from "../components/sellscreen/SecondContainerItemsMobile";
 import { StepsView } from "../components/stepsview/StepsView";
+import { StepsViewMobile } from "../components/stepsview/StepsViewMobile";
+import { CarouselView } from "../components/carousel/CarouselView";
 
 export const SellScreen = () => {
+  // const SecondContainerItemsDesktop = () => {
+  //   return (
+  //     <div className="__sellScreen_secondContainer_itemsContainer">
+  //       <div className="__sellScreen_secondContainer_itemsContainer_item">
+  //         <img
+  //           src={require("../assets/rotation.png")}
+  //           className="__sellScreen_secondContainer_itemsContainer_item_image"
+  //         />
+  //         <span className="lato-bold">Oferta en 24h</span>
+  //         <span className="lato-regular">
+  //           No te preocupes de su estado, ni de reparaciones para eneseñarlo
+  //         </span>
+  //       </div>
+  //       <div className="__sellScreen_secondContainer_itemsContainer_item">
+  //         <img src={require("../assets/wallet.png")} />
+  //         <span className="lato-bold">Pago inmediato</span>
+  //         <span className="lato-regular">
+  //           No te preocupes de su estado, ni de reparaciones para eneseñarlo
+  //         </span>
+  //       </div>
+  //       <div className="__sellScreen_secondContainer_itemsContainer_item">
+  //         <img src={require("../assets/paperplane.png")} />
+  //         <span className="lato-bold">Ahórrate el papeleo</span>
+  //         <span className="lato-regular">
+  //           Si lo necesitas también podemos ayudarte a encontrar tu nuevo hogar
+  //         </span>
+  //       </div>
+  //       <div className="__sellScreen_secondContainer_itemsContainer_item">
+  //         <img src={require("../assets/group-3.png")} />
+  //         <span className="lato-bold">Tu eliges la fecha</span>
+  //         <span className="lato-regular">
+  //           Si lo necesitas también podemos ayudarte a encontrar tu nuevo hogar
+  //         </span>
+  //       </div>
+  //     </div>
+  //   );
+  // };
+
+  // const SecondContainerItemsMobile = () => {
+  //   return (
+  //     <div className="__sellScreen_secondContainer_itemsContainer">
+  //       <div
+  //         style={{
+  //           display: "flex",
+  //           flexDirection: "row",
+  //           alignItems: "center",
+  //           height: "100px",
+  //           justifyContent: "center",
+  //         }}
+  //       >
+  //         <img
+  //           src={require("../assets/housem.png")}
+  //           style={{
+  //             height: "70%",
+  //             marginRight: "25px",
+  //             backgroundColor: "blue",
+  //           }}
+  //         />
+  //         <div
+  //           style={{
+  //             backgroundColor: "pink",
+  //             height: "100%",
+  //             display: "flex",
+  //             flexDirection: "column",
+  //           }}
+  //         >
+  //           <span className="lato-bold" style={{ fontSize: 14, width: "80%" }}>
+  //             Compramos tu piso como esté <br />
+  //             <span style={{ fontSize: 14 }}>
+  //               No te preocupes de su estado, ni de reparaciones para eneseñarlo
+  //             </span>
+  //           </span>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // };
   return (
     <div className="__sellScreen">
       <div className="__sellScreen_topContainer">
         <span className="__sellScreen_topContainer_title lato-light">
-          Vende tu casa en un <span className="lato-bold">clic</span>
+          Vende tu casa <br />
+          en un <span className="lato-bold">clic</span>
         </span>
         <img
           src={require("../assets/bitmap.png")}
           alt="arrow_img"
-          style={{ marginLeft: 300 }}
+          className="__sellScreen_topContainer_arrow"
         />
         <div className="__sellScreen_input_container">
           <img
@@ -25,6 +107,11 @@ export const SellScreen = () => {
             type="text"
             placeholder="Introduce la dirección de tu casa o piso"
           ></input>
+          <div className="__sellScreen_topContainer_buttonDesktop">
+            <PrincipalButton text="VENDER MI INMUEBLE" />
+          </div>
+        </div>
+        <div className="__sellScreen_topContainer_buttonMobile">
           <PrincipalButton text="VENDER MI INMUEBLE" />
         </div>
         <span className="__sellScreen_topContainer_subtitle lato-regular">
@@ -42,38 +129,11 @@ export const SellScreen = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </span>
-        <div className="__sellScreen_secondContainer_itemsContainer">
-          <div className="__sellScreen_secondContainer_itemsContainer_item">
-            <img src={require("../assets/rotation.png")} />
-            <span className="lato-bold">Oferta en 24h</span>
-            <span className="lato-regular">
-              No te preocupes de su estado, ni de reparaciones para eneseñarlo
-            </span>
-          </div>
-          <div className="__sellScreen_secondContainer_itemsContainer_item">
-            <img src={require("../assets/wallet.png")} />
-            <span className="lato-bold">Pago inmediato</span>
-            <span className="lato-regular">
-              No te preocupes de su estado, ni de reparaciones para eneseñarlo
-            </span>
-          </div>
-          <div className="__sellScreen_secondContainer_itemsContainer_item">
-            <img src={require("../assets/paperplane.png")} />
-            <span className="lato-bold">Ahórrate el papeleo</span>
-            <span className="lato-regular">
-              Si lo necesitas también podemos ayudarte a encontrar tu nuevo
-              hogar
-            </span>
-          </div>
-          <div className="__sellScreen_secondContainer_itemsContainer_item">
-            <img src={require("../assets/group-3.png")} />
-            <span className="lato-bold">Tu eliges la fecha</span>
-            <span className="lato-regular">
-              Si lo necesitas también podemos ayudarte a encontrar tu nuevo
-              hogar
-            </span>
-          </div>
-        </div>
+        {window.innerWidth > 800 ? (
+          <SecondContainerItemsDesktop />
+        ) : (
+          <SecondContainerItemsMobile />
+        )}
       </div>
 
       <div className="__sellScreen_thirdContainer">
@@ -85,31 +145,47 @@ export const SellScreen = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </span>
       </div>
-      <div className="__sellScreen_stepsViewContainer">
-        <StepsView />
-      </div>
 
-      <div className="__sellScreen_fourContainer"></div>
+      {window.innerWidth > 800 ? <StepsView /> : <StepsViewMobile />}
 
-      <div className="__sellScreen_fifthContainer">
-        <span className="__sellScreen_fifthContainer_title lato-light">
-          Trabajamos con las mejores empresas
-        </span>
-        <span className="__sellScreen_fifthContainer_subtitle lato-light">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </span>
-        <div className="__sellScreen_fifthContainer_imageContainer">
-          <img
-            className="__sellScreen_fifthContainer_image"
-            src={require("../assets/inmoseguros-image.png")}
-          />
-          <img
-            className="__sellScreen_fifthContainer_image"
-            src={require("../assets/mapfre-image.png")}
-          />
+      {window.innerWidth > 800 && (
+        <div className="__sellScreen_fourContainer"></div>
+      )}
+      {window.innerWidth > 800 && (
+        <div className="__sellScreen_fifthContainer">
+          <span className="__sellScreen_fifthContainer_title lato-light">
+            Trabajamos con las mejores empresas
+          </span>
+          <span className="__sellScreen_fifthContainer_subtitle lato-light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+          <div className="__sellScreen_fifthContainer_imageContainer">
+            <img
+              className="__sellScreen_fifthContainer_image"
+              src={require("../assets/inmoseguros-image.png")}
+            />
+            <img
+              className="__sellScreen_fifthContainer_image"
+              src={require("../assets/mapfre-image.png")}
+            />
+          </div>
         </div>
-      </div>
+      )}
+
+      {window.innerWidth < 800 && (
+        <div className="__sellScreen_referencesContainer">
+          <span className="__sellScreen_referencesContainer_title lato-light">
+            Trabajamos con las mejores empresas
+          </span>
+          <span className="__sellScreen_referencesContainer_subtitle lato-light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+
+          <CarouselView />
+        </div>
+      )}
     </div>
   );
 };

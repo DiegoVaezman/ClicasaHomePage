@@ -35,7 +35,7 @@ export const Footer = () => {
         <span className="__footer_linksContainer_text lato-regular">
           © 2017 CLICASA. TODOS LOS DERECHOS RESERVADOS
         </span>
-        <div>
+        <div className="__footer_linksContainer_links">
           <Link to="#" className="__footer_linksContainer_link lato-regular">
             Mapa web
           </Link>
@@ -46,7 +46,7 @@ export const Footer = () => {
             Aviso legal
           </Link>
         </div>
-        <div>
+        <div className="__footer_linksContainer_icons">
           <img
             src={require("../../assets/1489335130-linkedin-circle-color.png")}
             alt="social-link-icon"

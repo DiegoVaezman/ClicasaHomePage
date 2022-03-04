@@ -1,6 +1,14 @@
 .__stepsView {
     display: flex;
     flex-direction: column;
+    width: 70%;
+    // min-width: 900px;
+    margin-top: -380px;
+    @media (max-width: 1000px) {
+        width: 90%;
+    margin-top: 0px;
+
+    }
     
 
     &_header {
