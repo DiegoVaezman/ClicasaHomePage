@@ -19,10 +19,6 @@ export const HomeRouter = () => {
       <Routes>
         <Route path="/" element={<SellScreen />} />
         <Route path="sell" element={<SellScreen />} />
-        {/* <Route path="dc" element={<DcScreen />} />
-          <Route path="search" element={<SearchScreen />} />
-          <Route path="hero/:heroId" element={<HeroScreen />} />
-          <Route path="/" element={<MarvelScreen />} /> */}
       </Routes>
       {window.innerWidth > 800 ? <Footer /> : <FooterMobile />}
     </div>
