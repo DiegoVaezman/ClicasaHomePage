@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 800px) {
+        display: none;
+    }
     &_logo {
         margin-top: 30px;
         width: 45%;

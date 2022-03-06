@@ -3,6 +3,9 @@
     flex-direction: column;
     padding-left: 14px;
     padding-right: 14px;
+    @media (min-width: 800px) {
+        display: none;
+    }
 
     &_item {
         display: flex;

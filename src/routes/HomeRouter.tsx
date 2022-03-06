@@ -20,7 +20,8 @@ export const HomeRouter = () => {
         <Route path="/" element={<SellScreen />} />
         <Route path="sell" element={<SellScreen />} />
       </Routes>
-      {window.innerWidth > 800 ? <Footer /> : <FooterMobile />}
+      <Footer />
+      <FooterMobile />
     </div>
   );
 };

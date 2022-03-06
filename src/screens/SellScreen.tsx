@@ -52,11 +52,9 @@ export const SellScreen = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </span>
-        {window.innerWidth > 800 ? (
-          <SecondContainerItemsDesktop />
-        ) : (
-          <SecondContainerItemsMobile />
-        )}
+
+        <SecondContainerItemsDesktop />
+        <SecondContainerItemsMobile />
       </div>
 
       <div className="__sellScreen_thirdContainer">
@@ -69,46 +67,42 @@ export const SellScreen = () => {
         </span>
       </div>
 
-      {window.innerWidth > 800 ? <StepsView /> : <StepsViewMobile />}
+      <StepsView />
+      <StepsViewMobile />
 
-      {window.innerWidth > 800 && (
-        <div className="__sellScreen_fourContainer"></div>
-      )}
-      {window.innerWidth > 800 && (
-        <div className="__sellScreen_fifthContainer">
-          <span className="__sellScreen_fifthContainer_title lato-light">
-            Trabajamos con las mejores empresas
-          </span>
-          <span className="__sellScreen_fifthContainer_subtitle lato-light">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </span>
-          <div className="__sellScreen_fifthContainer_imageContainer">
-            <img
-              className="__sellScreen_fifthContainer_image"
-              src={require("../assets/inmoseguros-image.png")}
-            />
-            <img
-              className="__sellScreen_fifthContainer_image"
-              src={require("../assets/mapfre-image.png")}
-            />
-          </div>
+      <div className="__sellScreen_fourContainer"></div>
+
+      <div className="__sellScreen_fifthContainer">
+        <span className="__sellScreen_fifthContainer_title lato-light">
+          Trabajamos con las mejores empresas
+        </span>
+        <span className="__sellScreen_fifthContainer_subtitle lato-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </span>
+        <div className="__sellScreen_fifthContainer_imageContainer">
+          <img
+            className="__sellScreen_fifthContainer_image"
+            src={require("../assets/inmoseguros-image.png")}
+          />
+          <img
+            className="__sellScreen_fifthContainer_image"
+            src={require("../assets/mapfre-image.png")}
+          />
         </div>
-      )}
+      </div>
 
-      {window.innerWidth < 800 && (
-        <div className="__sellScreen_referencesContainer">
-          <span className="__sellScreen_referencesContainer_title lato-light">
-            Trabajamos con las mejores empresas
-          </span>
-          <span className="__sellScreen_referencesContainer_subtitle lato-light">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </span>
+      <div className="__sellScreen_referencesContainer">
+        <span className="__sellScreen_referencesContainer_title lato-light">
+          Trabajamos con las mejores empresas
+        </span>
+        <span className="__sellScreen_referencesContainer_subtitle lato-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </span>
 
-          <CarouselView />
-        </div>
-      )}
+        <CarouselView />
+      </div>
     </div>
   );
 };
